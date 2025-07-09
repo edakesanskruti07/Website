@@ -1,0 +1,176 @@
+<html >
+<head>
+  
+  <title>Login - Cafe Aroma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    
+    * {
+      box-sizing: border-box;
+    
+    }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      background-image: url('Images/login_bg.jpg'); 
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      
+    }
+  .login-container 
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 300px;
+    }
+
+    #success-msg 
+    {
+      display: none;
+      color:#4040da;
+      background: linear-gradient(to right, #d9dee1, #bedcf6 ,#e0e3e4) !important;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+      animation: fadeIn 0.8s ease-in-out;
+      border: 0px;
+    }
+
+
+    .login-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .login-box {
+      backdrop-filter: blur(12px);
+      
+      border-radius: 30px;
+      padding: 40px 30px; /* 40 px is vertical padding */
+      box-shadow:  0 40px 40px rgba(39, 38, 38, 0.3);
+      width: 450px;
+    }
+
+   h2 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 32px;
+    }
+
+      input {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 25px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+       outline: none; 
+             transition: 0.3s ease;
+    }
+
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #eee;
+      margin-bottom: 15px;
+    }
+
+    .options a {
+      color: #eee;
+       text-decoration: none; 
+    }
+
+    
+
+     button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(to right, #d67bff, #a61fe4);
+      border: none;
+      border-radius: 20px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #b95ce4, #a61fe4);
+    }
+
+     p {
+      text-align: center;
+      color: #eee;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+     p a {
+      color: #fff;
+      text-decoration:none;
+      font-weight: bold;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="login-wrapper">
+    <div class="login-container">
+
+    <p id="success-msg">Login Successful! Redirecting...</p>
+
+
+    <div class="login-box">
+      <h2>Login to Cafe Aroma</h2>
+      <form action="Main_Web.html" method="post" onsubmit="return handle()">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password"  placeholder="Password" required>
+
+        <div class="options">
+          <label><input type="checkbox">Remember Me</label>
+          <a href="/forgot-password">Forgot Password?</a>
+        </div>
+
+
+
+        <button type="submit">Login</button>
+      </form>
+
+      <p>Don't have an account? <a href="sign_up.html">Create one</a></p>
+    </div>
+    </div>
+  </div>
+
+
+   
+   
+  <script>
+    function handle(){
+      // alert("Logged in Successfully!!");
+      // window.location.href="Main_Web.html";
+       document.getElementById("success-msg").style.display = "block";
+       setTimeout(function () {
+      window.location.href = "Main_Web.html";
+    }, 3000);
+      return false;
+    }
+  </script>
+</body>
+</html>
+
+

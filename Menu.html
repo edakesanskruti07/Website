@@ -1,0 +1,242 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Café Aroma - Menu
+        </title>
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <link rel="stylesheet" type="text/css" href="navigation.css">
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+            <style>
+
+        .header {
+            background-color: #4b2e1f;
+            padding: 40px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            margin-bottom: 10px;
+            margin-top: 60px;
+            
+        }
+
+       
+        .cart {
+            position: fixed;
+            top: 100px;
+            right: 30px;
+            width: 200px;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-family: 'Poppins', sans-serif;
+            z-index: 999;
+        }
+
+        .body{
+            background-image:url("bg2.jpg");
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+          
+
+
+            </style>
+    </head>
+<body>
+  <header>
+    <ul class="ul1" >
+        <li><a href="Main_Web.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <!-- <li><a href="gallery.html">Gallery</a></li> -->
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+        <!-- <li><a href="Setting.html">Setting</a></li> -->
+        
+        </ul>
+        
+    <h1>☕ Café Aroma Menu</h1>
+    <p style="position: relative; top:30px; left:43px ">Freshly brewed drinks & delicious bites</p>
+  </header>
+
+
+
+
+  <section class="menu-section">
+    <h2>Hot Beverages</h2>
+    
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="C:\html1\Caffe\Images\espresso.jpg" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>Strong & bold single shot</p>
+        <span>₹80 </span>
+        <button onclick="addToCart('Latte', 80)" style="background: #ff8c42; border:none; color: white;  font-weight: bold;   padding: 3px 4px;">🛒 Add to Cart</button>
+      </div>
+
+        <div class="menu-card">
+        <img src="Images/GreenTea.jpg" alt="Latte">
+        <h3>Green Tea</h3>
+        <p>Espresso with steamed milk</p>
+        <span>₹110</span>
+        <button onclick="addToCart('Green Tea', 110)" style="background: #ff8c42; border:none; color: white;  font-weight: bold;   padding: 3px 4px;">🛒 Add to Cart</button>
+      </div>  
+
+      <div class="menu-card">
+        <img src="Images/latte1.jpg" alt="Latte">
+        <h3>Cafe Latte</h3>
+        <p>Espresso with steamed milk</p>
+        <span>₹200</span>
+        <button onclick="addToCart('Cafe Latte', 200)" style="background: #ff8c42; border:none; color: white;  font-weight: bold;   padding: 3px 4px;">🛒 Add to Cart</button>
+      </div>
+
+       <div class="menu-card">
+        <img src="Images/cap.jpg" alt="Latte">
+        <h3>Cappuccino</h3>
+        <p>Espresso with steamed milk</p>
+        <span>₹250</span>
+        <button onclick= "addToCart('Cappuccino', 250)" style="background: #ff8c42; border:none; color: white;  font-weight: bold;   padding: 3px 4px;">🛒 Add to Cart </button>
+      </div>
+
+       <div class="menu-card">
+        <img src="Images/flat.jpg" alt="Latte">
+        <h3>Flat White</h3>
+        <p>Espresso with steamed milk</p>
+        <span>₹240</span>
+        <button onclick="addToCart('Flat White', 240)" style="background: #ff8c42; border:none; color: white;  font-weight: bold;   padding: 3px 4px;">🛒 Add to Cart</button>
+      </div>
+    
+       <div class="menu-card">
+        <img src="Images/americano.jpg" alt="Latte">
+        <h3>Americano</h3>
+        <p>Espresso with steamed milk</p>
+        <span>₹320</span>
+        <button onclick="addToCart('Americano', 320)" style="background: #ff8c42; border:none; color: white;  font-weight: bold;   padding: 3px 4px;">🛒 Add to Cart</button>
+      </div>
+
+       <div class="menu-card">
+        <img src="Images/Mocha.jpg" alt="Latte">
+        <h3>Mocha</h3>
+        <p>Espresso with steamed milk</p>
+        <span>₹360</span>
+        <button onclick="addToCart('Mocha', 360)" style="background: #ff8c42; border:none; color: white;  font-weight: bold;   padding: 3px 4px;">🛒 Add to Cart</button>
+      </div>
+
+       <div class="menu-card">
+        <img src="Images/hc.jpg" alt="Latte">
+        <h3>Hot chocolate</h3>
+        <p>Espresso with steamed milk</p>
+        <span>₹390</span>   
+        <button onclick="addToCart('Hot Chocolate', 390)" style="background: #ff8c42; border:none; color: white;  font-weight: bold;   padding: 3px 4px;">🛒 Add to Cart</button>
+      </div>
+         
+    </div>
+  </section>
+
+
+
+
+
+
+  
+  <section class="menu-section">
+    <h2>Snacks & Quick Bites</h2>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="Images/fries.jpg" alt="Fries">
+        <h3>French Fries</h3>
+        <p>Crispy golden fries with dip</p>
+        <span>₹250</span>
+        <button onclick="addToCart('Fries', 250)" style="background: #ff8c42; border:none; color: white;  font-weight: bold;   padding: 3px 4px;">🛒 Add to Cart</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="Images/sandwich.jpg" alt="Sandwich">
+        <h3>Veg Sandwich</h3>
+        <p>Loaded with Veggies & Cheese</p>
+        <span>₹150</span>
+        <button onclick="addToCart('Latte', 150)" style="background: #ff8c42; border:none; color: white;  font-weight: bold;   padding: 3px 4px;">🛒 Add to Cart</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="Images/garlic_bread.jpg" alt="Sandwich">
+        <h3>Garlic Bread</h3>
+        <p>Loaded with Veggies & Cheese</p>
+        <span>₹180</span>
+        <button onclick="addToCart('Latte', 180)" style="background: #ff8c42; border:none; color: white;  font-weight: bold;   padding: 3px 4px;">🛒 Add to Cart</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="Images/mini_pizza.jpg" alt="Sandwich">
+        <h3>Mini Pizza</h3>
+        <p>Loaded with Veggies & Cheese</p>
+        <span>₹200</span>
+        <button onclick="addToCart('Latte', 200)" style="background: #ff8c42; border:none; color: white;  font-weight: bold;   padding: 3px 4px;">🛒 Add to Cart</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="Images/veg_wrap.jpg" alt="Sandwich">
+        <h3>Veg Wrap</h3>
+        <p>Loaded with Veggies & Cheese</p>
+        <span>₹300</span>
+        <button onclick="addToCart('Latte', 300)" style="background: #ff8c42; border:none; color: white;  font-weight: bold;   padding: 3px 4px;">🛒 Add to Cart</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="Images/onion_rings.jpg" alt="Sandwich">
+        <h3>Onion Rings</h3>
+        <p>Loaded with Veggies & Cheese</p>
+        <span>₹120</span>
+        <button onclick="addToCart('Latte', 120)" style="background: #ff8c42; border:none; color: white;  font-weight: bold;   padding: 3px 4px;">🛒 Add to Cart</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="Images/fries.jpg" alt="Sandwich">
+        <h3>French Fries</h3>
+        <p>Loaded with Veggies & Cheese</p>
+        <span>₹420</span>
+        <button onclick="addToCart('Latte', 420)" style="background: #ff8c42; border:none; color: white;  font-weight: bold;   padding: 3px 4px;">🛒 Add to Cart</button>
+      </div>
+
+      <div class="menu-card">
+        <img src="Images/chicken_roll.jpg" alt="Sandwich">
+        <h3>Chicken Roll</h3>
+        <p>Loaded with Veggies & Cheese</p>
+        <span>₹260</span>
+        <button onclick="addToCart('Latte', 260)" style="background: #ff8c42; border:none; color: white;  font-weight: bold;   padding: 3px 4px;">🛒 Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+
+
+    
+
+  <div class="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <p>Total: ₹<span id="total">0</span></p>
+  </div>
+
+
+<script src="Script.js">
+</script>
+
+  <footer>
+    <p> © 2025 Café Aroma | Open Daily: 9AM–10PM | Mumbai, India ❤️</p>
+  </footer>
+
+
+</body>
+</html>

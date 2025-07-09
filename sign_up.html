@@ -1,0 +1,154 @@
+<html >
+<head>
+  
+  <title>Login - Cafe Aroma</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+   <style>
+    Base Styles
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      }
+
+    body 
+    {
+      font-family: 'Playfair Display', serif; 
+       /* background-image:"login_bg.jpg"; */ 
+      background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93'); /*Optional: Replace with your own/*/
+
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-wrapper 
+    {
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .login-box 
+    {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 40px 30px; 
+       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      max-width: 400px;
+      width: 90%;
+    }
+
+    .login-box h2 
+    {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 25px;
+    }
+
+    .login-box input
+    { 
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: rgba(255, 2 55, 255, 0.7);
+      font-size: 16px;
+      outline: none;
+      transition: 0.3s ease; 
+     }
+
+    .login-box input:focus{
+      border-color: #b95ce4;
+      box-shadow: 0 0 10px rgba(185, 92, 228, 0.4);
+    }
+
+
+    .options
+    {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #eee;
+      margin-bottom: 15px;
+    }
+
+    .options a 
+    {
+      color: #eee;
+      text-decoration: none;
+    }
+    
+
+    .options a:hover
+    {
+      text-decoration: underline;
+    } 
+
+
+     .login-box button
+    {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(to right, #d7abeb, #b95ce4);
+      border: none;
+      border-radius: 20px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    } 
+
+
+    .login-box button:hover
+    {
+      background: linear-gradient(to right, #b95ce4, #d67bff);
+    }
+
+
+    .login-box p
+    {
+      text-align: center;
+      color: #eee;
+      margin-top: 20px;
+      font-size: 14px;
+    } 
+
+
+    .login-box p a 
+    {
+      color: #fff;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-wrapper">
+
+    <div class="login-box">
+      <h2>Sign Up to Café Aroma</h2>
+      <form action="Main_Web.html" method="post">
+        <input type="text" placeholder=" Full Name" required>
+        <input type="number" name="password" placeholder="Mobile No." required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Create a Password" required>
+        <input type="password" name="password" placeholder="Confirm your Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
